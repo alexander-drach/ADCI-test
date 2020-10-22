@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: "Open Sans";
+
+    src: url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Open Sans italic";
+
+    src: url("../fonts/opensansitalic.woff") format("woff"),
+    url("../fonts/opensansitalic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Open Sans bold";
+
+    src: url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Open Sans BoldItalic";
+
+    src: url("../fonts/opensansbolditalic.woff") format("woff"),
+    url("../fonts/opensansbolditalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Open Sans SemiBold";
+
+    src: url("../fonts/opensanssemibold.woff") format("woff"),
+    url("../fonts/opensanssemibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Playfair Bold";
+
+    src: url("../fonts/PlayfairDisplay-Bold.woff") format("woff"),
+    url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Playfair BoldItalic";
+
+    src: url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff"),
+    url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='button'],
+input[type='submit'] {
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: none;
+}
+
+.list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
