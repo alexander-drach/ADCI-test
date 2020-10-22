@@ -256,6 +256,10 @@ sub-menu .current-menu-item {
     background-position: top 2px right 0;
 }
 
+.btn-reservation:hover {
+    color: #e2d1a6;
+}
+
 .humb {
     position: relative;
     display: none;
