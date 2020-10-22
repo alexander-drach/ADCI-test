@@ -250,10 +250,44 @@ sub-menu .current-menu-item {
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
-    padding-right: 13px;
+    padding-right: 17px;
     background-image: url(../img/icons/icon-lock.png);
     background-repeat: no-repeat;
     background-position: top 2px right 0;
+}
+
+.humb {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.humb__line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.humb__line:before,
+.humb__line:after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.humb__line:before {
+    top: 0;
+}
+
+.humb__line:after{
+    bottom: 0;
 }
 /* header end */
 
@@ -424,3 +458,100 @@ sub-menu .current-menu-item {
     padding-right: 0;
 }
 /* footer end */
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-page {
+        padding-top: 60px;
+    }
+
+    .btn-reservation {
+        top: -40px;
+    }
+
+    .humb {
+        display: block;
+    }
+
+    .btn-reservation {
+        right: 15px;
+    }
+
+    .nav {
+        align-self: center;
+        transform: translateY(0);
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .footer-info {
+        flex-wrap: wrap;justify-content: center;
+    }
+
+    .footer-control {
+        order: 0;
+        margin-bottom: 25px;
+    }
+
+    .footer-address {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-content__item {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    .footer-content__item:last-child {
+        flex: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header-page {
+        padding-top: 100px;
+    }
+
+    .btn-reservation {
+        width: 145px;
+        top: -80px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .footer-content__item {
+        flex: 100%;
+    }
+
+    .footer-address__item {
+        margin-bottom: 15px;
+    }
+
+    .checkbox-field {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        width: 170px;
+    }
+}
