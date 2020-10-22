@@ -132,3 +132,97 @@ input[type='submit'] {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* header */
+.header-page {
+    background-color: #353436;
+    padding: 22px 0 24px 0;
+}
+
+.container_header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    align-self: flex-end;
+    transform: translateY(6px);
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu__item {
+    position: relative;
+    margin-right: 24px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.main-menu__item:last-child {
+    margin-right: 0;
+    text-transform: uppercase;
+}
+
+.main-menu .current-menu-item {
+    font-family: "Open Sans bold";
+}
+
+.main-menu .current-menu-item .main-menu__link,
+.sub-menu .current-menu-item .sub-menu__link{
+    color: #e2d1a6;
+}
+
+.main-menu__link {
+    color: #ffffff;
+}
+
+.main-menu__link:hover,
+.sub-menu__link:hover {
+    color: #e2d1a6;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    max-width: 200px;
+    background-color: #353436;
+    padding: 30px 13px 4px 13px;
+}
+
+.sub-menu__item {
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+.sub-menu__item:last-child {
+    border-bottom: none;
+}
+
+.sub-menu__link {
+    color: #ffffff;
+}
+
+sub-menu .current-menu-item {
+    font-family: "Open Sans SemiBold";
+}
+
+.btn-reservation {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    background-color: transparent;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-right: 13px;
+    background-image: url(../img/icons/icon-lock.png);
+    background-repeat: no-repeat;
+    background-position: top 2px right 0;
+}
+/* header end */
