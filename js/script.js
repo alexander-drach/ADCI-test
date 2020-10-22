@@ -11,3 +11,15 @@ openModal.addEventListener('click', function () {
 closeModal.addEventListener('click', function () {
     modalWraper.classList.remove('open');
 });
+
+const humb = document.querySelector('.humb');
+const header = document.querySelector('.header-page');
+const closeMenu = document.querySelector('.close-menu');
+
+humb.addEventListener('click', function () {
+    header.classList.add('open-menu')
+});
+
+closeMenu.addEventListener('click', function () {
+    header.classList.remove('open-menu')
+});
