@@ -415,6 +415,7 @@ sub-menu .current-menu-item {
     font-size: 18px;
     margin-top: auto;
     align-self: flex-end;
+    color: #000000;
 }
 
 .link-more:hover {
