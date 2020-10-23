@@ -29,13 +29,21 @@ closeMenu.addEventListener('click', function () {
 /* humb end */
 
 /* show posts */
-
+/*
 const btnShowPosts = document.querySelector('.btn-show-posts');
 const posts = document.querySelector('.posts');
 
 btnShowPosts.addEventListener('click', function () {
-    posts.classList.toggle('show-posts')
-});
 
+    if (posts.classList.contains('show-posts')) {
+        posts.classList.remove('show-posts');
+        posts.classList.add('out-posts');
+    } else {
+        posts.classList.remove('out-posts');
+        posts.classList.add('show-posts');
+    }
+
+});
+*/
 /* show posts end*/
 
