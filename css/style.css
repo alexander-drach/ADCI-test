@@ -217,6 +217,7 @@ input[type='submit'] {
     max-width: 200px;
     background-color: #353436;
     padding: 30px 13px 4px 13px;
+    z-index: 500;
 }
 
 .main-menu__item:hover .sub-menu {
@@ -303,6 +304,7 @@ sub-menu .current-menu-item {
     height: 100%;
     justify-content: center;
     align-items: flex-start;
+    z-index: 1000;
 }
 
 .open-menu .logo,
@@ -355,28 +357,20 @@ sub-menu .current-menu-item {
 /* header end */
 
 /* slider */
-.slider {
-    height: 670px;
-    background-color: #b5b4b4;
-}
+
 /* slider end */
 
 /* short posts */
-.main-page {
-    position: relative;
-}
-
 .posts {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 100%);
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, 100%);*/
     width: 1200px;
 }
 
 .posts-wrapper {
     display: flex;
-    overflow: hidden;
     transition: height 3s ease;
 }
 
@@ -428,16 +422,22 @@ sub-menu .current-menu-item {
 }
 
 .btn-show-posts {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    /*position: absolute;*/
+    /*bottom: 100%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    display: block;
     width: 90px;
     height: 30px;
-    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/icons/icon-btn-show-post.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     transition: opacity 0.3s ease;
 }
-
+/*
 .btn-show-posts:hover {
     opacity: 0.7;
 }
@@ -448,9 +448,22 @@ sub-menu .current-menu-item {
     to {transform: translate(-50%, 0);}
 }
 
-.show-posts {
-    animation: showPosts 2s linear;
+@keyframes outPosts {
+    from {transform: translate(-50%, 0);}
+    50% {transform: translate(-50%, 50%);}
+    to {transform: translate(-50%, 100%);}
 }
+
+.show-posts {
+    animation: showPosts 1s linear;
+    animation-fill-mode: forwards;
+}
+
+.out-posts {
+    animation: outPosts 1s linear;
+    animation-fill-mode: forwards;
+}
+*/
 /* short posts end*/
 
 /* footer */
@@ -458,8 +471,6 @@ sub-menu .current-menu-item {
     background-color: #353436;
     color: #ffffff;
     padding: 35px 0 20px 0;
-    position: relative;
-    z-index: 100;
 }
 
 .footer-content {
@@ -789,7 +800,7 @@ sub-menu .current-menu-item {
         width: 80%;
     }
 
-    .posts {
+    .posts-wrapper {
         flex-wrap: wrap;
     }
 
