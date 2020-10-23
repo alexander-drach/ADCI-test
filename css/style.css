@@ -396,6 +396,11 @@ sub-menu .current-menu-item {
     border-radius: 50%;
     margin-right: 10px;
     padding: 0;
+    transition: border-color 0.3s ease;
+}
+
+.nav-slider__item:hover {
+    border-color: #e2d1a6;
 }
 
 .nav-slider__item_active {
