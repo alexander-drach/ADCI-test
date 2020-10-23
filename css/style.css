@@ -438,11 +438,11 @@ sub-menu .current-menu-item {
     background-position: center;
     transition: opacity 0.3s ease;
 }
-/*
+
 .btn-show-posts:hover {
     opacity: 0.7;
 }
-
+/*
 @keyframes showPosts {
     from {transform: translate(-50%, 100%);}
     50% {transform: translate(-50%, 50%);}
