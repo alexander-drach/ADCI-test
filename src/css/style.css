@@ -161,6 +161,7 @@ input[type='submit'] {
 .header-page {
     background-color: #353436;
     padding: 22px 0 24px 0;
+    z-index: 500;
 }
 
 .container_header {
@@ -216,8 +217,7 @@ input[type='submit'] {
     left: -15px;
     max-width: 200px;
     background-color: #353436;
-    padding: 30px 13px 4px 13px;
-    z-index: 500;
+    padding: 30px 13px 4px 13px;    
 }
 
 .main-menu__item:hover .sub-menu {
