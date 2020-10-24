@@ -413,21 +413,21 @@ sub-menu .current-menu-item {
 /* slider end */
 
 /* short posts */
+.main-page {
+    position: relative;
+}
+
 .posts {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, calc(100% + 10px));
+    left: calc(50% - 600px);
+    transform: translateY(calc(100% - 30px));
     width: 1200px;
 }
 
 .posts-wrapper {
     display: flex;
     transition: height 3s ease;
-}
-
-.show-posts {
-    height: auto;
 }
 
 .posts__item {
@@ -475,10 +475,6 @@ sub-menu .current-menu-item {
 }
 
 .btn-show-posts {
-    /*position: absolute;*/
-    /*bottom: 100%;*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
     display: block;
     width: 90px;
     height: 30px;
@@ -496,15 +492,15 @@ sub-menu .current-menu-item {
 }
 
 @keyframes showPosts {
-    from {transform: translate(-50%, calc(100% - 40px));}
-    50% {transform: translate(-50%, 50%);}
-    to {transform: translate(-50%, 40px);}
+    from {transform: translateY(calc(100% - 30px));}
+    50% {transform: translateY(50%);}
+    to {transform: translateY(0);}
 }
 
 @keyframes outPosts {
-    from {transform: translate(-50%, 40px);}
-    50% {transform: translate(-50%, 50%);}
-    to {transform: translate(-50%, calc(100% + 10px));}
+    from {transform: translateY(0);}
+    50% {transform: translateY(50%);}
+    to {transform: translateY(calc(100% - 30px));}
 }
 
 .show-posts {
