@@ -7,6 +7,9 @@
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexander-drach/ADCI-test.git"
@@ -35,6 +38,8 @@
     "file-loader": "^6.1.1"
   },
   "dependencies": {
-    "core-js": "^3.6.5"
+    "autoprefixer": "^10.0.1",
+    "core-js": "^3.6.5",
+    "postcss-loader": "^4.0.4"
   }
 }
