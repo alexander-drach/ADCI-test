@@ -359,7 +359,7 @@ sub-menu .current-menu-item {
 /* slider */
 .slider {
     position: relative;
-    height: 620px;
+    padding-top: 56.25%;
     overflow: hidden;
 }
 
@@ -367,13 +367,15 @@ sub-menu .current-menu-item {
     width: 100%;
     height: 100%;
     position: absolute;
+    left: 0;
+    top: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .slide-show {
@@ -413,8 +415,9 @@ sub-menu .current-menu-item {
 /* slider end */
 
 /* short posts */
-.main-page {
+.wr {
     position: relative;
+    overflow: hidden;
 }
 
 .posts {
@@ -687,6 +690,7 @@ sub-menu .current-menu-item {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     overflow-y: auto;
+    z-index: 1000;
 }
 
 .modal {
@@ -741,10 +745,21 @@ sub-menu .current-menu-item {
         padding-right: 15px;
     }
 
+    /* .slider {
+        height: 450px;
+    } */
+
     .posts {
+        position: relative;
+        left: 0;
         width: 100%;
+        transform: translateY(0);
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .btn-show-posts {
+        display: none;
     }
 }
 
