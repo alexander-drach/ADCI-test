@@ -239,7 +239,7 @@ input[type='submit'] {
     color: #ffffff;
 }
 
-sub-menu .current-menu-item {
+.sub-menu .current-menu-item {
     font-family: "Open Sans SemiBold";
 }
 
