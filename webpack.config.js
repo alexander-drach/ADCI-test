@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const autoprefixer = require('autoprefixer');
 
 module.exports = {
   output: {
@@ -48,17 +47,6 @@ module.exports = {
           name: '[name].[ext]',
         },
       },
-      {
-        loader: 'postcss-loader',
-        options: {
-            plugins: [
-                autoprefixer({
-                    browsers:['ie >= 8', 'last 4 version']
-                })
-            ],
-            sourceMap: true
-        }
-    }
     ],
   },
   plugins: [

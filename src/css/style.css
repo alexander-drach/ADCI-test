@@ -100,14 +100,33 @@ html {
 
 body {
     display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
     height: 100%;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 .main {
-    flex: 1;
+    /* flex: 1; */
+    flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    
+    flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    
+    flex-basis: auto;
+	-webkit-flex-basis: auto;
+	-ms-flex-preferred-size: auto;
 }
 
 a {
@@ -447,13 +466,14 @@ input[type='submit'] {
     position: absolute;
     bottom: 0;
     left: calc(50% - 600px);
+    -webkit-transform: translateY(calc(100% - 30px));
+    -ms-transform: translateY(calc(100% - 30px));
     transform: translateY(calc(100% - 30px));
     width: 1200px;
 }
 
 .posts-wrapper {
     display: flex;
-    transition: height 3s ease;
 }
 
 .posts__item {
