@@ -811,6 +811,7 @@ input[type='submit'] {
     .posts {
         position: relative;
         left: 0;
+        bottom: 0;
         width: 100%;
         transform: translateY(0);
         padding-left: 0;
