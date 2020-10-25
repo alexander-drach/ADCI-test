@@ -464,11 +464,10 @@ input[type='submit'] {
 
 .posts {
     position: absolute;
-    bottom: 0;
-    left: calc(50% - 600px);
-    -webkit-transform: translateY(calc(100% - 30px));
-    -ms-transform: translateY(calc(100% - 30px));
-    transform: translateY(calc(100% - 30px));
+    bottom: 30px;
+    left: calc(50% - 600px);    
+    /* transform: translateY(calc(100% - 30px)); */
+    transform: translateY(100%);
     width: 1200px;
 }
 
@@ -538,15 +537,27 @@ input[type='submit'] {
 }
 
 @keyframes showPosts {
-    from {transform: translateY(calc(100% - 30px));}
+    from {
+        bottom: 30px;
+        transform: translateY(100%);
+    }
     50% {transform: translateY(50%);}
-    to {transform: translateY(0);}
+    to {
+        bottom: 0;
+        transform: translateY(0);
+    }
 }
 
 @keyframes outPosts {
-    from {transform: translateY(0);}
+    from {
+        bottom: 0;
+        transform: translateY(0);
+    }
     50% {transform: translateY(50%);}
-    to {transform: translateY(calc(100% - 30px));}
+    to {
+        bottom: 30px;
+        transform: translateY(100%);
+    }
 }
 
 .show-posts {
