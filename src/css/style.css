@@ -530,10 +530,15 @@ input[type='submit'] {
     background-size: cover;
     background-position: center;
     transition: opacity 0.3s ease;
+    transform-origin: 50% 50%;
 }
 
 .btn-show-posts:hover {
     opacity: 0.7;
+}
+
+.btn-show-posts-rotate {
+    transform: rotate(180deg);
 }
 
 @keyframes showPosts {

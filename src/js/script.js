@@ -35,6 +35,8 @@ const posts = document.querySelector('.posts');
 
 btnShowPosts.addEventListener('click', function () {
 
+    btnShowPosts.classList.toggle('btn-show-posts-rotate');
+
     if (posts.classList.contains('show-posts')) {
         posts.classList.remove('show-posts');
         posts.classList.add('out-posts');
